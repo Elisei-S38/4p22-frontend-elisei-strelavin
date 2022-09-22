@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson_5</title>
+</head>
+<body>
+  <header>
+    <header>
+      <div><span>Урок №</span>
+      <span><a href="Lesson_2.html">Lesson 2</a>,</span>
+      <span><a href="Lesson_3.html">Lesson 3</a>,</span>
+      <span><a href="Lesson_4.html">Lesson 4</a>,</span>
+      <span><a href="Lеsson_5.html">Lesson 5</a></span>
+      </div>
+      <p>
+        <span><a href="Lesson_5_2.html">IFRAME</a></span>
+      </p>
+    </header>
+    <h1>Таблица</h1>
+  </header>
+  <div><p>TABLE тег таблици,<br> атрибут:
+            border="1" граница таблици(устаревший)</p>
+       <p>TR это строка</p>
+       <p>TH это загловочная строка(шапка)</p>
+       <p>TD обыная строка.<br> атрибут:
+           colspan="3" объединение ячеек.<br>
+           align="center" размещение текста в ячейке(устаревший)"center","left","right"<br>
+           bgcolor="green" Задаёт цвет ячейки</p>
+       CAPTION ипользуется для симантики, ботов, поисковых систем,<br> читалок(тех кто озвучивает текст). пишется сразу после TABLE.
+       </div>
+       <div><p>
+        <table>
+          <thead>THEAD and TBODY почитать и узнать самому,</thead>
+          <tbody> можно использовать или не использовать</tbody>
+        </table>
+        </p></div>
+       <h2>Таблица: список студентов</h2>
+  <table border="1">
+    <caption>Заголовок таблици</caption>
+    <thead>
+    <tr>
+      <th>Студент</th>
+      <th>Дата рождения</th>
+      <th>Дата присоединения к курсу </th>
+    </tr>
+    </thead>
+    <tbody>
+      <colgroup>
+        <col bgcolor="lime">
+        <col span="2" style="background-color:darkolivegreen">
+        <!-- данный тег и его атрибуты отвечают за цвет и колличество окрашенных ячеек -->
+      </colgroup>
+    <tr>
+      <td>Petr Cech</td>
+      <td>20.05.1982</td>
+      <td>15.03.2022</td>
+    </tr>
+    <tr>
+      <td>Petr Cech</td>
+      <td>20.05.1982</td>
+      <td>15.03.2022</td>
+    </tr>
+    <tr>
+      <td>Petr Cech</td>
+      <td>20.05.1982</td>
+      <td>15.03.2022</td>
+    </tr>
+    <tr>
+      <td>Petr Cech</td>
+      <td>20.05.1982</td>
+      <td>15.03.2022</td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" align="center" bgcolor="green">Подвал</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
