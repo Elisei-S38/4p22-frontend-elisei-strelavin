@@ -1,0 +1,20 @@
+* { 
+  box-sizing: border-box;
+}
+/* Элемент * означает все элементы и правила которые будут писаться там, будут работать для всех */
+body {
+  margin: 0;
+}
+
+.class {
+  /* BG */
+
+position: absolute;
+width: 1920px;
+height: 842px;
+left: -240px;
+top: -32px;
+
+background: #030303;
+
+}
