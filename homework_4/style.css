@@ -1,0 +1,209 @@
+* {
+  max-width: 1920px;
+  max-height: 1080px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.img-basket {
+  width: 30px
+}
+
+.header-title {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  color: rgb(8, 8, 86);
+  margin-bottom: 20px;
+}
+
+.container-ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  list-style-type: none;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  font-family: cursive;
+}
+
+.marcet-li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.header-all {
+  background-image: url(https://stroitel-urgi.ru/wp-content/themes/fedor/img/header1.jpg);
+  background-repeat: no-repeat;
+  border-bottom: 15px solid dodgerblue;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer-all {
+  background-image: url(https://stroitel-urgi.ru/wp-content/themes/fedor/img/header1.jpg);
+  background-repeat: no-repeat;
+  border-top: 15px solid dodgerblue;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.footer-shop {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+button {
+  color: navy;
+  font-family:unset;
+  outline:  none;
+  border: none;
+  background-color: rgb(17, 215, 215);
+  border-radius: 20px;
+  font-size: 18px;
+  border: 3px solid rgb(0, 59, 252);
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color:navy;
+  color:aqua;
+  border: 3px solid black;
+}
+
+.link-shop {
+  padding: 5px;
+  text-decoration: none;
+  color: darkblue;
+}
+
+.link-shop:hover {
+  background-color: rgba(4, 0, 255, 0.507);
+  color:rgb(6, 7, 48);
+  border-radius: 20px;
+}
+
+.basket {
+  text-decoration: none;
+  color: rgb(0, 0, 96);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.basket-span {
+  background-color: deepskyblue;
+  padding: 3px;
+  border-radius: 15px;
+  border: 3px solid blue;
+  display: flex;
+  align-items: center;
+}
+
+.basket-span:hover {
+  background-color:darkblue;
+}
+
+.basket:hover {
+  color:aqua;
+}
+
+.container-main {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container__item_1 {
+  background-image: url(img/1.jpg);
+}
+
+.container__item_2 {
+  background-image: url(img/2.jpg);
+}
+
+.container__item_3 {
+  background-image: url(img/3.jpg);
+}
+
+.container__item_4 {
+  background-image: url(img/4.jpg);
+}
+
+.container__item_5 {
+  background-image: url(img/5.jpg);
+}
+
+.container__item_6 {
+  background-image: url(img/6.jpg);
+}
+
+.container__item_7 {
+  background-image: url(img/7.jpg);
+}
+
+.container__item_8 {
+  background-image: url(img/8.jpg);
+}
+
+.container__item_9 {
+  background-image: url(img/9.jpg);
+}
+
+.container__item_10 {
+  background-image: url(img/10.jpg);
+}
+
+.container__item_1,
+.container__item_2,
+.container__item_3,
+.container__item_4,
+.container__item_5,
+.container__item_6,
+.container__item_7,
+.container__item_8,
+.container__item_9,
+.container__item_10 {
+  margin: 10px;
+  padding: 5px;
+  background-color: #fff;
+  background-size: 200px 250px;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  border-radius: 20px;
+  font-family: cursive;
+  width: 200px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-button__buy {
+  padding: 2px 10px 2px 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.style-main {
+  background-color: rgba(11, 146, 146, 0.479);
+}

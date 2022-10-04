@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* background: red;0 */
+  /* background-color:aqua; */
+  background-image: url(https://4lapki.com/wp-content/uploads/2019/05/https-www-vladtime-ru-uploads-posts-2018-06-1529.jpeg);
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+}
+
+.box-div {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(#ff0000, #0000ff, green, yellow, skyblue);
+  border-radius: 60px 100px 30px 10px;
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(#ff0000, #0000ff, green, yellow, #f0f);
+  border-radius: 10px 20px 30px 40px;
+}
+
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(45deg, red 0%, red 50%, blue 50%, blue 100%);
+  border-radius: 10px 50px;
+}
+
+.box-3 {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(45deg, #ff000000 0%, red 50%, blue 50%, #00ff0000 100%);
+  border-radius: 20px 50px 35px;
+}
+
+.article-img {
+  float: left;
+}
+/* FLOAT атрибут для оптикания картнки текстом, дабы она была в потоке. */
