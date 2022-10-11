@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Lesson_11.css" type="text/css">
+  <!-- что бы подключить SCSS нужно перевести его в CSS через SASS  -->
+  <title>Lesson 11</title>
+</head>
+<body>
+  <header>
+    <div><span>Урок №</span>
+      <span><a href="Lesson_2.html">Lesson 2</a>,</span>
+      <span><a href="Lesson_3.html">Lesson 3</a>,</span>
+      <span><a href="Lesson_4.html">Lesson 4</a>,</span>
+      <span><a href="Lеsson_5.html">Lesson 5</a>,</span>
+      <span><a href="Lesson_6.html">Lesson 6</a>,</span>
+      <span><a href="Lesson_7.html">Lesson 7</a>,</span>
+      <span><a href="Lesson_8.html">Lesson 8</a>,</span>
+      <span><a href="Lesson_9.html">Lesson 9</a>,</span>
+      <span><a href="Lesson_10.html">Lesson 10</a>,</span>
+      <span><a href="Lesson_11.html">Lesson 11</a>,</span>
+      </div>
+    <h1>Lesson 11</h>
+  </header>
+  <!-- БЭМ(Блок Элемент Модификатор) 
+  Это методология специально разработанная чтобы было удобно писать стили(название класса) дабы они имели четко заданную структуру и каждый блок и его компонент имел свой набор названий и стилей, не перемешивались между собой, что бы блок можно было целиком взять вытащить в другой HTML, и там использовать теже самые стили, чтобы внутрение элементы приняли те стили, КОТОРЫЕ ТАМ ПРОПИСАНЫ(CSS).-->
+
+  <!-- Есть и другие способы названий, такие как  CSS Bliss  -->
+  <header class="common-header">
+    <h1 class="common-h1">Заголовок страницы</h1>
+  </header>
+  <main>
+    <!-- БЭМ Вариант 1 -->
+    <section class="common-section">
+      <h2 class="common-section__heading">Заголовок секции</h2>
+      <div class="common-section__content">
+        <p class="common-section__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatum. Asperiores amet inventore optio, saepe, similique eligendi consectetur qui vel dolorum officia corporis dolores, obcaecati sint deleniti accusamus iure possimus?</p>
+        <p class="common-section__paragraph_accentuated">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti tempora, voluptatibus veniam cumque quos similique saepe ad id? Corporis libero rem beatae aliquid ducimus aperiam, minima velit inventore consequatur accusamus.</p>
+      </div>
+    </section>
+    <!-- БЭМ Вариан 2-content -->
+    <section class="common-section">
+      <h2 class="common-section__heading">Заголовок секции</h2>
+      <div class="common-section__content">
+        <p class="common-section-content__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatum. Asperiores amet inventore optio, saepe, similique eligendi consectetur qui vel dolorum officia corporis dolores, obcaecati sint deleniti accusamus iure possimus?</p>
+        <p class="common-section-content__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti tempora, voluptatibus veniam cumque quos similique saepe ad id? Corporis libero rem beatae aliquid ducimus aperiam, minima velit inventore consequatur accusamus.</p>
+      </div>
+    </section>
+    <section class="common-section">
+      <h2 class="common-section__heading">Заголовок секции</h2>
+      <div class="common-section__content">
+        <p class="common-section-content__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatum. Asperiores amet inventore optio, saepe, similique eligendi consectetur qui vel dolorum officia corporis dolores, obcaecati sint deleniti accusamus iure possimus?</p>
+        <p class="common-section-content__paragraph common-section-content__paragraph_accentuated">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti tempora, voluptatibus veniam cumque quos similique saepe ad id? Corporis libero rem beatae aliquid ducimus aperiam, minima velit inventore consequatur accusamus.</p>
+      </div>
+    </section>
+    <!-- БЭМ Вариант 3 -->
+    <section class="common-section">
+      <h2 class="common-section__heading">Заголовок секции</h2>
+      <div class="common-section__content">
+        <p class="common-section__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatum. Asperiores amet inventore optio, saepe, similique eligendi consectetur qui vel dolorum officia corporis dolores, obcaecati sint deleniti accusamus iure possimus?</p>
+        <p class="common-section__paragraph common-section__paragraph_accentuated">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti tempora, voluptatibus veniam cumque quos similique saepe ad id? Corporis libero rem beatae aliquid ducimus aperiam, minima velit inventore consequatur accusamus.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="">
+  </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.common-section {
+  padding: 20px;
+  border: 2px solid gray;
+
+  &__heading {
+    color: red;
+  }
+
+  &__content {
+    font-family: cursive, sans-serif;
+  }
+
+  &__paragraph {
+    font-size: 20px;
+    &_accentuated {
+      color: aqua;
+      background: black;
+    }
+  }
+}

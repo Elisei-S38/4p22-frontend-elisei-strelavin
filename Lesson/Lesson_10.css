@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+}
+
+.content {
+  display: flex;
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  background: navy;
+  margin: 10px;
+}
+
+.ellipse {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  background: red;
+}
+
+/* .container-green .element {
+  background: green;
+}  ".container-green .element" данное комбинирование делает так, что мы ищем все элементы с классом ".element" в контейнере ".container-green". Не зависимо от уровня вложенности, он всё равно будет иметь цвет заданный в классе ".container-green" */
+
+.container-green > .element,
+.container-green > .ellipse {
+  background: green;
+}
+/* ".container-green > .ellipse" с данным обзначением ">" делает так, что все элементы ".ellipse или  .element" в ".container-green" принимали стилизацию родителя, только они, а не другие с такимже  классом, вложенные в другой элемент */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.image-container {
+  position: relative;
+  width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-container h3 {
+  position: absolute;
+  bottom: 0;
+  color:white;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: brown;
+  border-radius: 50%;
+}
+
+.square + .circle {
+  background: magenta;
+}
+/* ".square + .circle" через "+" даёт возможность стилизовать только соседний элемент(следующий или снизу) ".circle", который ид1т после ".square", но не следующий ".circle".  */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.square1 {
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+}
+
+.circle1 {
+  width: 100px;
+  height: 100px;
+  background: brown;
+  border-radius: 50%;
+}
+
+.ellipse1 {
+  width: 100px;
+  height: 80px;
+  background: green;
+  border-radius: 50%;
+}
+
+  .square1 ~ .circle1 {
+    background: magenta;
+  }
+  /* ".square1 ~ .circle1" через "~" даёт возможность стилизовать все последующие  элементы ".circle1" (находящиеся снизу ".square1") не зависимо от того разделяет ли их дрйгой элемент(к примеру ".ellipse1")  */
+
+  .square1 + .circle1 {
+    background: orange;
+  }
+  /* ".square1 + .circle1" будет приоритетнее, так как находится ниже ".square1 ~ .circle1".
+  проще сказать правило ниже всегда приоритетнее, так что это надо учитывать при стилизации в CSS */

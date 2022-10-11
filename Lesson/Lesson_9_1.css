@@ -36,5 +36,27 @@
   text-align: center;
   height: 50px;
   font-family: 'Helvetica', serif;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.image0 {
+  width:  300px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.image1 {
+  width:  300px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.image2 {
+  width:  300px;
+  height: 500px;
+  object-fit: fill;
 }

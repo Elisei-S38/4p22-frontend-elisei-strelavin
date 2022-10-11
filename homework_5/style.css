@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 0;
+  min-width: 100vw;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  height: 100px;
+  background: blueviolet;
+}
+
+.header-h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 25px;
+  font-size: 50px;
+  color: white;
+}
+
+.main {
+  position:absolute;
+  right: 0;
+  top: 140px;
+  height: 600px;
+  min-width: calc(100vw - 350px);
+  overflow: auto;
+}
+
+.main-adress-book {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-adress-book__surnames {
+  position: sticky;
+  top: 0px;
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: blueviolet;
+  color: white;
+  font-size: 30px;
+}
+
+.footer-sidebar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 140px;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-right: 2px solid gray;
+}
+
+.footer-sidebar-dl__dt {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.footer-sidebar-dl__dd {
+  margin-bottom: 10px;
+}
+
+.footer-sidebar-dl-dd__a {
+  color: #ff710b;
+  font-size: 20px;
+}

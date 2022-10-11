@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 80px;
+  background: blueviolet
+}
+
+/* min-height:  calc(100vh - 380px) данна стилизация задаёт минимальное значение отображения так, что бы header, main и footer отображались во всю высоту экрана(вьюпорта vh-единица измерения) и header и footer не будут слипаться */
+.content {
+  min-height:  calc(100vh - 380px);
+}
+
+.footer {
+  height: 300px;
+  background: blue;
+}

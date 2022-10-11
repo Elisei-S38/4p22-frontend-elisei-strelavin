@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 200vh;
+  position: relative;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+}
+
+.square-1 {
+  position: relative;
+  left: 30px;
+  top: 15px;
+  background: red;
+}
+
+.square-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(49, 114, 255);
+}
+/* " position: absolute;" элемент с значением "absolute" теряет своё место в общеМ потоке и элемент после него переходит на его место */
+
+.square-3 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: green;
+}
+/* "position: fixed;" данное позиционирование в отличии от обсолютного считается относительным "VH"(вьюполрта-экрана)  */
+
+.square-4 {
+  position: sticky;
+  top: 50px;
+  background: aqua;
+}
+/* "position: sticky;" это микс позиционирования "position: relative;" и "position: fixed;", он движется с основным потоком, а потом фиксируется в определённой точке (задаётся "top") */
+
+.square-5 {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  background: orangered;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: blueviolet;
+}
+
+.square1 {
+  width: 100px;
+  height: 100px;
+}
+
+.square-6 {
+  position: absolute;
+  background: brown;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+/* ".square-6" с "position: absolute;" еслу у родителя заданно позиционирование "position: relative;" остаётся в своём родителе.
+При этом ".square-7" с "position: fixed;" не меняет своего позиционироания и остаётся за пределами родительсякого элемента*/
+
+.square-7 {
+  position: fixed;
+  background: navy;
+  z-index: 2;
+  right: 0;
+  bottom: 50%;
+}
+
+.text {
+  position: relative;
+  z-index: 3;
+}
+/* "z-index: 3;" работает только с теми элементами у которых задано позиционирование. чем выше значение тем выше распологается */
+
+/* примечания к дз
+      1. все виды позиционирования(обоснованное), кроме static
+      2. залипание заголовков букв сверху
+      3. примерное соответствие макету
+      4. и БЭМ */
