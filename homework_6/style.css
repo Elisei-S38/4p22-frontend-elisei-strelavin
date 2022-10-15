@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  background: blueviolet;
+  width: 100vw;
+  height: 80px;
+}
+
+.header-h1 {
+margin: 0;
+color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-sidebar {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: calc(100vh - 100px - 80px);
+  border-right: 3px solid gray;
+  font-family: Roboto, sans-serif;
+}
+
+.main-sidebar__h1 {
+  font-size: 28px;
+}
+
+.main-sidebar__box {
+  margin-bottom: 20px;
+}
+
+.main-sidebar-box__a {
+  font-size: 26px;
+  text-decoration: none;
+  color: #ff710b;
+}
+
+.main-adress-book {
+  padding-left: 5%;
+  width: calc(100% - 35%);
+  height: calc(100vh - 100px - 80px);
+  font-family: Roboto, sans-serif;
+  overflow: auto;
+}
+
+.main-adress-book__surnames {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  background: blueviolet;
+  color: white;
+  height: 30px;
+  position: sticky;
+  top: 0;
+  font-size: 24px;
+}
+
+.main-adress-book__ul {
+  list-style-type: none;
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100vw;
+  height: 60px;
+  background: blueviolet;
+}
