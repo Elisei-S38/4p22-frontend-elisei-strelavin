@@ -21,7 +21,6 @@ body {
   position: absolute;
   width: 600px;
   height: 412px;
-  left: calc(100vw - 50% - 300);
   top: 82px;
   justify-content: center;
   background: #ffffff;
