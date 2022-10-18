@@ -5,3 +5,93 @@
 body {
   margin: 0;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.form-input {
+  font-size: 20px;
+  border: 2px solid navy;
+  border-radius: 0;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.form__file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+}
+
+.form-file__input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* //////////////////////////////////////////////// */
+
+.form__checkbox {
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox > input {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.form__checkbox > div {
+  /* display: inline-block; */
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  margin-right: 8px;
+}
+
+.form__checkbox > input:checked + div {
+  background: black;
+}
+/* //////////////////////////// */
+
+.form__radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form__radio > input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.form__radio > div {
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.form__radio > input:checked + div {
+  background: navy;
+}

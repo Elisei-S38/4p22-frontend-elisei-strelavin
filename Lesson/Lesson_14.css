@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.footer {
+  width: 100vw;
+  height: 100px;
+  background: black;
+}
+
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background: navy;
+  border: 3px solid brown;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1920px) {
+  .box-1 {
+    width: 400px;
+    height: 400px;
+    background: rebeccapurple;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .box-1 {
+    width: 100%;
+    height: 100vh;
+    background: darkgreen;
+  }
+}
+
+@media print { 
+  .box-1{
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 0, 0);
+  }
+}
+/* при указании @media screen нужно избегать конфликтов, между несколькими @media screen запросами */
+
+/* 
+320px -479px
+480px -719px
+720px - 959px
+960px -1023px
+1024px -1279px
+1280px - 1439px
+1440px - 1599px
+1600px -1919px
+1920px - 2559px
+2560px <
+ */
+
+ /*  часто используемые правила media запросов
+    < - 719px
+720px - 1023px
+1024px -1279px
+1280px - 1439px
+1440px - 1919px
+1920px -   <
+ */
+
+ .box-2 {
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+  background: blueviolet;
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 479px) {
+  .box-2 {
+    width: 288px;
+    height: 288px;
+    background: darkblue;
+  }
+
+ }
+
+ @media screen and (min-width: 480px) and (max-width: 719px) {
+  .box-2 {
+    width: 459px;
+    height: 259px;
+    background: darkcyan;
+  }
+ }
+
+ @media screen and (min-width: 720px) and (max-width: 959px) {
+  .box-2 {
+    width: 688px;
+    height: 688px;
+    background: darkgreen;
+  }
+ }
+
+ @media screen and (min-width: 960px) and (max-width: 1023px) {
+  .box-2 {
+    width: 928px;
+    height: 928px;
+    background: darkred;
+  }
+ }
+
+ @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .box-2 {
+    width: 992px;
+    height: 992px;
+    background: darkorange;
+  }
+ }
+
+ @media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .box-2 {
+    width: 1248px;
+    height: 1248px;
+    background: darkolivegreen;
+  }
+ }
+
+ @media screen and (min-width: 1440px) and (max-width: 1599px) {
+  .box-2 {
+    width: 1408px;
+    height: 1408px;
+    background: blueviolet;
+  }
+ }
+
+ @media screen and (min-width: 1600px) and (max-width: 1919px) {
+  .box-2 {
+    width: 1568px;
+    height: 1568px;
+    background: brown;
+  }
+ }
+
+ @media screen and (min-width: 1920px) and (max-width: 2559px) {
+  .box-2 {
+    width: 1888px;
+    height: 1888px;
+    background: maroon;
+  }
+ }
+
+ @media screen and (min-width: 2560px) {
+  .box-2 {
+    width: 2528px;
+    height: 2528px;
+    background: midnightblue;
+  }
+ }

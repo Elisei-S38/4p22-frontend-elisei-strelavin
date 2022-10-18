@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: calc(100 / 1440 * 100vw);
+  background: darkred;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 calc(68 / 1440 * 100vw);
+  margin-top: calc(48 / 1440 * 100vw);
+  column-gap: calc(33 / 1440 * 100vw);
+  row-gap: calc(30 / 1440 * 100vw);
+}
+
+.card {
+  background: darkred;
+  height: calc(400 / 1440 * 100vw);
+  width: calc(300 / 1440 * 100vw);
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    height: calc(100 / 320 * 100vw);
+  }
+
+  .content {
+    flex-wrap: wrap;
+    padding: 0 calc(32 / 320 * 100vw);
+    margin-top: calc(26 / 320 * 100vw);
+    column-gap: calc(26 / 320 * 100vw);
+    row-gap: calc(22 / 320 * 100vw);
+  }
+  .card {
+    height: calc(160 / 320 * 100vw);
+    width: calc(115 / 320 * 100vw);
+  }
+}

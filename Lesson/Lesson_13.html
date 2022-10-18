@@ -4,9 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Lesson_13.css" type="text/css">
-  <title>Lesson 12</title>
+  <title>Lesson 13</title>
 </head>
 <body>
-  
-</body>
+  <form style="display: flex; flex-direction:column; max-width: 400px; margin: 0 auto;">
+    <!-- для каждого input необходим тег label, он может распологаться где угодно рядом и может оборачивать. Также у input и label должен быть одинаковый id, на который будет ссылать данный input(id должен быть уникальным)
+    name тоже обязательный атрибут  -->
+    <label for="smth">
+      <span>Название</span>
+      <input id="smth">
+    </label>
+    <hr>
+    <!-- При помощи атрибута aria-label="FIO" можно спрятать тег label, но не рекомендован к использованию -->
+    <input aria-label="FIO" name="FIO" type="name" placeholder="Введите ваше ФИО">
+    <hr>
+    <label for="name">Имя</label>
+    <input id="name" name="FIO" type="name" placeholder="Введите ваше ФИО">
+    <button>Отправить</button>
+    <!-- button находясь в теге form автоматически получает атрибут type со значением sudmit -->
+    <hr>
+    <input type="button" value="отправить button">
+    <input type="submit" value="ОТПРАВИТЬ submit">
+    <!-- input type="submit" с данным значением, это кнопка для отправки формы -->
+    <hr>
+    <form>
+      <label for="name">Имя</label>
+      <input id="name" name="FIO" type="text">
+      <input id="email" name="email" type="email">
+      <input id="password" name="password" type="password">
+      <input id="number" name="number" type="number">
+      <input id="tel" name="tel" type="tel">
+      <hr>
+      <!-- не используется  -->
+      <input type="color">
+      <input type="date">
+      <input type="datetime-local">
+      <!-- //////////////////// -->
+      <hr>
+      <!-- ИСПОЛЬЗУЕТСЯ -->
+      <input type="file">
+      <!-- ////////////// -->
+      <hr>
+      <div>
+      <input id="checkbox-1" type="checkbox" name="colors" value="RED">
+      <label for="checkbox-1">Красный</label>
+      </div>
+      <div>
+      <input id="checkbox-2" type="checkbox" name="colors" value="YELLOW">
+      <label for="checkbox-2">Желтый</label>
+      </div>
+      <div>
+      <input id="checkbox-3" type="checkbox" name="colors" value="WHITE">
+      <label for="checkbox-3">Белый</label>
+      </div>
+      <div>
+      <input id="checkbox-4" type="checkbox" name="colors" value="BLUE">
+      <label for="checkbox-4">Синий</label>
+      </div>
+      <hr>
+      <div>
+         <!-- у радио кнопок name должен быть один -->
+        <input id="radio-1" type="radio" name="gender" value="man">
+        <label for="radio-1">Мужчина</label>
+        <input id="radio-2" type="radio" name="gender" value="woman">
+        <label for="radio-2">Женщина</label>
+      </div>
+      <button>Отправить</button>
+      <hr>
+      <label for="language">Язык</label>
+      <select name="language" id="language">
+        <option value="RU">Русский</option>
+        <option value="EN">Англиский</option>
+        <option value="FR">Французский</option>
+        <option value="GR">Немецкий</option>
+      </select>
+      <hr>
+      <lable for="textarea">О себе</lable>
+      <textarea id="textarea" name="textarea"></textarea>
+    </form>
+    <h1>СТИЛИЗАЦИЯ</h1>
+    <form class="form">
+      <input class="form-input" id="email" name="email" type="email">
+    <hr>
+    <div class="form__file">
+      <label>загрузить файл</label>
+      <input class="form-file__input" type="file">
+    </div>
+    <hr>
+    <div class="form__checkbox">
+      <input id="checkbox-1" type="checkbox" name="colors" value="RED">
+      <div class="form-checkbox__box"></div>
+      <label for="checkbox-1">Красный</label>
+      </div>
+      <div>
+      <input id="checkbox-2" type="checkbox" name="colors" value="YELLOW">
+      <label for="checkbox-2">Желтый</label>
+      </div>
+      <div>
+      <input id="checkbox-3" type="checkbox" name="colors" value="WHITE">
+      <label for="checkbox-3">Белый</label>
+      </div>
+      <div>
+      <input id="checkbox-4" type="checkbox" name="colors" value="BLUE">
+      <label for="checkbox-4">Синий</label>
+      </div>
+      <hr>
+      <div>
+        <div class="form__radio">
+          <input id="radio-1" type="radio" name="gender" value="man">
+          <div></div>
+          <label for="radio-1">Мужчина</label>
+       </div>
+       <div class="form__radio">
+          <input id="radio-2" type="radio" name="gender" value="woman">
+          <div></div>
+          <label for="radio-2">Женщина</label>
+      </div>
+     </div>
+    </form>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+  </body>
 </html>
