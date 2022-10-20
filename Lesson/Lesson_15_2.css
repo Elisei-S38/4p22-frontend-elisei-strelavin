@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* .text::first-line {
+  color: red;
+} */
+
+.text::first-letter {
+  color: red;
+  font-size: 25px;
+}
+
+.text::selection {
+  color: red;
+  background: darkcyan;
+}
