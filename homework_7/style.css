@@ -155,10 +155,9 @@ line-height: 16px;
   .main__container {
     position: absolute;
     width: calc(728 / 768 * 100vw);
-    height: calc(697 / 768 *100vw);
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
+    height: calc(697 / 768 * 100vw);
+    margin-left: calc(20 / 768 * 100vw);
+    margin-right: calc(20 / 768 * 100vw);
     border-radius: calc(20 / 768 * 100vw)
   }
 
