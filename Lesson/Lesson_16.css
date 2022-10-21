@@ -4,7 +4,56 @@
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
 }
 
+.container {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  /* height: 500px; */
+}
+
+.box {
+  /* width: 100px; */
+  height: 100px;
+  background: navy;
+  border: 3px solid black;
+  /* flex: 1 1 100px; */
+  /* flex-grow: 1; в атрибуде flex при значении 1,отвечает за ровномерное распроделение, растягивая элемены по экрану. при значении 0, растягиваться они не будут. */
+  /* flex-shrink: 1; отвечает за ровномерное сужение элементов по ширине экрана. при значении 0, сужаться не будут, сохраняя свою заданную форму и при сужении экрана появится горизонтальный скрол */
+}
+
+.box:nth-child(1) {
+  flex: 4;
+}
+
+.box:nth-child(2) {
+  flex: 2;
+}
+
+.box:nth-child(3) {
+  flex: 6 0;
+}
+
+.box:nth-child(4) {
+  flex: 1 0;
+}
+/* ///////////////////////////////////// */
+
+.container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 20px;
+
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background: darkred;
+  border: 5px solid black; 
+}
