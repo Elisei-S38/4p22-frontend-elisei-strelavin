@@ -4,7 +4,74 @@
 
 body {
   margin: 0;
-  background: #ffffff;
+  width: 100vw;
+  height: 100vw;
+  background: #FFFFFF;
 }
 
-.header {}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #787878;
+  width: 100vw;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__box {
+  display: flex;
+}
+
+.header-box__logo {
+  width: 222px;
+  height: 50px;
+  background-image: url(img/1280px-IU_logo\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  margin-left: calc(30 / 1440 * 100vw);
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.header-box__title {
+  width: 242px;
+  height: 44px;
+  font-size: 36px;
+  line-height: 44px;
+  margin-left: calc(30 / 1440 * 100vw);
+  margin-top: 21px;
+  margin-bottom: 15px;
+}
+
+.header__tab {
+  display: flex;
+  width: 245px;
+  margin-right: calc(43 / 1440 * 100vw);
+}
+
+a {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #787878;
+}
+
+.header-tab__registration {
+  width: 157px;
+  height: 29px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-right: calc(28 / 1440 * 100vw);
+  color: #1A226B;
+}
+
+.header-tab__login {
+  width: 60px;
+  height: 29px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+}
