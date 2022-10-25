@@ -100,7 +100,7 @@ a {
   margin: 0;
   margin-left: 242px;
   margin-right: 242px;
-  margin-top: 26px;
+  margin-top: 26px; 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -250,7 +250,7 @@ a {
     }
 
     .header-tab__login {
-      width: calc(40px / 768 * 100vw);
+      width: calc(40 / 768 * 100vw);
       height: calc(19 / 768 * 100vw);
       margin-top: calc(30 / 768 * 100vw);
       margin-bottom: calc(31 / 768 * 100vw);
