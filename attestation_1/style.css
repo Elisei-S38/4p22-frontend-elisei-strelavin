@@ -265,7 +265,7 @@ a {
     .main-container-form__heading {
       margin-top: calc(26 / 768 * 100vw);
       margin-left: calc(242 / 768 * 100vw);
-      margin-right: calc(243 / 768);
+      margin-right: calc(243 / 768 * 100vw);
       font-size: calc(50 / 768 * 100vw);
       line-height: calc(50 / 768 * 100vw);
     }
