@@ -12,17 +12,17 @@
     <div class="main__container">
       <form class="main-container__form">
         <h1 class="main-container-form__heading">Калькулятор</h1>
-        <label for="num1">Число №1</label>
-        <input id="num1" name="num1" type="text" placeholder="Введите число №1">
-        <label for="operator">Действие</label>
-        <input id="operator" name="operator" type="text" placeholder="Введите действие: +  -  *  /">
-        <label for="num2">Число №2</label>
-        <input id="num2" name="num2" type="text" placeholder="Введите число №2">
-        <button  class="main-container-form__check">Расчёт</button>
-        <label for="result">Результат</label>
-        <input class="main-container-form__result-input" id="result" name="result" type="text">
+        <label for="number1">Число №1</label>
+        <input id="number1" name="num1" type="text" placeholder="Введите число №1">
+        <label for="action">Действие</label>
+        <input id="action" name="operator" type="text" placeholder="Введите действие: +  -  *  /">
+        <label for="number2">Число №2</label>
+        <input id="number2" name="num2" type="text" placeholder="Введите число №2">
+        <button onclick="countingFunction()" class="main-container-form__check" id="equals">Расчёт</button>
       </form>
+      <div class="main-container-form__result" id="resultWindow"></div>
     </div>
+    <script src="script.js"></script>
 </main>
 </body>
 </html>

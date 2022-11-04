@@ -20,7 +20,7 @@ body {
   width: 500px;
   height: 600px;
   background: rgb(200, 200, 200);
-  margin-top: 100px;
+  margin-top: 80px;
   border-radius: 30px;
   border: 10px solid rgb(90, 90, 90);
 }
@@ -84,16 +84,27 @@ input {
   border: none;
 }
 
-.main-container-form__result-input {
-  height: 60px;
-  font-size: 34px;
+.main-container-form__result {
+  width: 440px;
+  height: 124px;
+  border: 2px solid rgb(90, 90, 90);
+  border-radius: 30px;
+  background: rgb(244, 244, 244);
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 26px;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(61, 61, 61);
+
 }
 
 @media screen and (max-width: 768px) {
   .main__container {
     width: calc(500 / 768 * 100vw);
     height: calc(600 / 768 * 100vw);
-    margin-top: calc(100 / 768 * 100vw);
+    margin-top: calc(80 / 768 * 100vw);
     border-radius: calc(30 / 768 * 100vw);
     border: calc(10 / 768 * 100vw) solid rgb(90, 90, 90);
   }
@@ -137,8 +148,13 @@ input {
     border-radius: calc(10 / 768 * 100vw);
   }
 
-  .main-container-form__result-input {
-    height: calc(60 / 768 * 100vw);
-    font-size: calc(34 / 768 * 100vw);
+  .main-container-form__result {
+    width: calc(440 / 768 * 100vw);
+    height: calc(124 / 768 * 100vw);
+    border: calc(2 / 768 * 100vw) solid rgb(90, 90, 90);
+    border-radius: calc(30 / 768 * 100vw);
+    margin-left: calc(20 / 768 * 100vw);
+    margin-top: calc(15 / 768 * 100vw);
+    font-size: calc(26 / 768 * 100vw);
   }
 }

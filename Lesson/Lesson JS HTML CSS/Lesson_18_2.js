@@ -34,26 +34,26 @@ console.log(divisionByZero);
 // Сокращённая Арифметика
 
 let n = 1;
-// n = n + 2;
-// n = n * 3;
-// n *= 3; // n = n * 3;
-// n += 3; // n = n + 3;
-// n /= 3; // n = n / 3;
-// n -= 3; // n = n - 3;
-// console.log(n);
+n = n + 2;
+n = n * 3;
+n *= 3; // n = n * 3;
+n += 3; // n = n + 3;
+n /= 3; // n = n / 3;
+n -= 3; // n = n - 3;
+console.log(n);
 
-// n++; // Инкримент (постфикс)
-// n++;
-// n--; // декримент (постфикс)
+n++; // Инкримент (постфикс)
+n++;
+n--; // декримент (постфикс)
 
-// --n;// декримент (префикс)
-// ++n;// декримент (префикс)
-// console.log(n);
+--n;// декримент (префикс)
+++n;// декримент (префикс)
+console.log(n);
 
 const resq = n++;
-// const resw = ++n;
+const resw = ++n;
 
 console.log(resq);
-// console.log(resw);
+console.log(resw);
 
 // const smth = Math. 
