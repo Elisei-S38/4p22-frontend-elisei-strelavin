@@ -68,7 +68,8 @@ button.addEventListener('click', (event) => {
   }};
 
   // ===================================================
-  if ((numb1 === '0') / (numb2 === '0')) {
+
+  if ((numb1 === '0') && (numb2 === '0')) {
     resultBox.innerText = 'Операция некорректна';
     return console.log('Операция некорректна');
   };

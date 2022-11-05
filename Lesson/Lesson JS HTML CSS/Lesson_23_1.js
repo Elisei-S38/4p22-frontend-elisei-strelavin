@@ -3,7 +3,7 @@
 // reduce
 
 // Set
-
+// Map
 
 const artNumbers = [
   {
@@ -88,3 +88,29 @@ set.delete('ананас');
 
 console.log(set);
 console.log(set.size);
+
+for (let entry of set) {
+  console.log(entry);
+};
+
+console.log('===================================================');
+
+// map - это почти тоже самое что и set, разнича в том что тут содержаться пары, ключ-значени, ключ и его значение
+
+const map = new Map();
+map.set('Коюч', 'Значение');
+map.set('Ключ1', 'Значение1');
+map.set('Ключ2', 'Значение2');
+
+console.log(map.size);
+console.log(map.get('Коюч'));
+console.log(map.has('Ключ2'));
+
+map.delete('Ключ1');
+console.log(map);
+
+// for (let entry of map) {
+for (let [key, value] of map) {
+  // console.log(entry);
+  console.log(`${key} - ${value}`);
+}
