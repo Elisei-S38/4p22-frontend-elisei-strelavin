@@ -97,7 +97,7 @@ input {
   font-weight: bold;
   font-style: normal;
   color: rgb(61, 61, 61);
-
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -156,5 +156,6 @@ input {
     margin-left: calc(20 / 768 * 100vw);
     margin-top: calc(15 / 768 * 100vw);
     font-size: calc(26 / 768 * 100vw);
+    padding-left: calc(10 / 768 * 100vw);
   }
 }
