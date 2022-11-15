@@ -1,0 +1,23 @@
+.container {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.box_1 {
+  width: 200px;
+  height: 200px;
+  background: navy;
+}
+
+.box_2 {
+  width: 150px;
+  height: 150px;
+  background: darkred;
+}
+
+.box_3 {
+  width: 100px;
+  height: 100px;
+  background: darkgreen;
+}
