@@ -94,6 +94,7 @@ a {
 }
 
 .main-container__form {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -110,13 +111,22 @@ a {
 }
 
 .main-container-form__email-label {
-  width: 40px;
+  width: 54px;
   height: 16px;
   font-size: 16px;
   line-height: 16px;
   margin-top: 15px;
-  margin-left: 45px;
+  margin-left: 33px;
   margin-right: 515px;
+}
+
+.main-container-form__email-error {
+  position: absolute;
+  top: 91px;
+  right: 46px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #EE2424;
 }
 
 .main-container-form__email-input {
@@ -141,13 +151,22 @@ a {
 }
 
 .main-container-form__password-label {
-  width: 56px;
+  width: 70px;
   height: 16px;
   font-size: 16px;
   line-height: 16px;
   margin-top: 11px;
-  margin-left: 45px;
+  margin-left: 33px;
   margin-right: 499px;
+}
+
+.main-container-form__password-error {
+  position: absolute;
+  top: 172px;
+  right: 46px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #EE2424;
 }
 
 .main-container-form__password-input {
@@ -172,13 +191,22 @@ a {
 }
 
 .main-container-form__password-confirmation-label {
-  width: 182px;
+  width: 196px;
   height: 16px;
   font-size: 16px;
   line-height: 16px;
   margin-top: 11px;
-  margin-left: 45px;
+  margin-left: 33px;
   margin-right: 373px;
+}
+
+.main-container-form__password-confirmation-error {
+  position: absolute;
+  right: 46px;
+  top: 253px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #EE2424;
 }
 
 .main-container-form__password-confirmation-input {
@@ -424,13 +452,21 @@ a {
   }
 
   .main-container-form__email-label {
-    width: calc(40 / 768 * 100vw);
+    width: calc(54 / 768 * 100vw);
     height: calc(16 / 768 * 100vw);
     font-size: calc(16 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
     margin-top: calc(15 / 768 * 100vw);
-    margin-left: calc(45 / 768 * 100vw);
+    margin-left: calc(33 / 768 * 100vw);
     margin-right: calc(515 / 768 * 100vw);
+  }
+
+  .main-container-form__email-error {
+    position: absolute;
+    top: calc(91 / 768 * 100vw);
+    right: calc(46 / 768 * 100vw);
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
   }
 
   .main-container-form__email-input {
@@ -448,13 +484,21 @@ a {
   }
 
   .main-container-form__password-label {
-    width: calc(56 / 768 * 100vw);
+    width: calc(70 / 768 * 100vw);
     height: calc(16 / 768 * 100vw);
     font-size: calc(16 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
     margin-top: calc(11 / 768 * 100vw);
-    margin-left: calc(45 / 768 * 100vw);
+    margin-left: calc(33 / 768 * 100vw);
     margin-right: calc(499 / 768 * 100vw);
+  }
+
+  .main-container-form__password-error {
+    position: absolute;
+    top: calc(172 / 768 * 100vw);
+    right: calc(46 / 768 * 100vw);
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
   }
 
   .main-container-form__password-input {
@@ -472,13 +516,21 @@ a {
   }
 
   .main-container-form__password-confirmation-label {
-    width: calc(182 / 768 * 100vw);
+    width: calc(196 / 768 * 100vw);
     height: calc(16 / 768 * 100vw);
     font-size: calc(16 / 768 * 100vw);
     line-height: calc(16 / 768 * 100vw);
     margin-top: calc(11 / 768 * 100vw);
-    margin-left: calc(45 / 768 * 100vw);
+    margin-left: calc(33 / 768 * 100vw);
     margin-right: calc(373 / 768 * 100vw);
+  }
+
+  .main-container-form__password-confirmation-error {
+    position: absolute;
+    top: calc(253 / 768 * 100vw);
+    right: calc(46 / 768 * 100vw);
+    font-size: calc(16 / 768 * 100vw);
+    line-height: calc(16 / 768 * 100vw);
   }
 
   .main-container-form__password-confirmation-input {
